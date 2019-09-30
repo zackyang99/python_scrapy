@@ -1,0 +1,21 @@
+1. create project folder and go into the folder
+	mkdir app && cd app
+
+2. create virtual environment (env is the location to create virtual environment)
+	python -m virtualenv env
+	Note: You should exclude your virtual environment directory from your version control system using .gitignore or similar.
+
+3. Activate the virtual environment
+	On macOS/Linux: source env/bin/activate
+	On windows: .\env\Scripts\activate
+
+4. Confirm in the virtual environment by checking the location of python interpreter
+	On macOS/Linux: which python
+	On windows: where python
+
+5. Leave the virtual environment
+	deactivate
+
+6. Save all the packages in the virtual environment to file:
+	pip freeze > requirements.txt
+
